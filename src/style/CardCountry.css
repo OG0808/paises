@@ -1,0 +1,140 @@
+
+.card-country, .card-country.dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.card-country__button-container, .card-country__button-container.dark {
+  width: 100%;
+  max-width: 1440px;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-country__button, .card-country__button.dark {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-country__button {
+  color: white;
+  background-color: #2b3743;
+}
+.card-country__button.dark {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  transition: .3s;
+}
+.card-country__button.dark:hover{
+   opacity: 50%;
+}
+
+.country, .country.dark {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2rem;
+  margin-top: 5rem;
+}
+
+.country__flag, .country__flag.dark {
+  transition: .3s;
+}
+.country__flag:hover, .country__flag.dark:hover {
+  transform: scale(1.1);
+  
+}
+.country__flag > img, .country__flag.dark > img {
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.country__info, .country__info.dark {
+  color: white;
+}
+.country__info.dark {
+  color: black;
+}
+
+.country__title, .country__title.dark {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+.country__title.dark {
+  color: black;
+}
+
+.country__details, .country__details.dark {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  gap: 4rem;
+  justify-content: flex-start;
+}
+
+.country__list, .country__list.dark {
+  list-style: none;
+}
+
+.country__list span, .country__list.dark span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
+.country__list.dark span {
+  color: black;
+}
+
+.country__border-list, .country__border-list.dark {
+  display: flex;
+  width: 500px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.country__border-button, .country__border-button.dark {
+  transition: .3s;
+  padding: 2px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.country__border-button {
+  background-color: #2b3743;
+  color: white;
+}
+.country__border-button.dark {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+.country__border-button:hover, .country__border-button.dark:hover {
+  opacity: 50%;
+ 
+}
+
+.country__border-title, .country__border-title.dark {
+  margin-top: 2rem;
+  color: white;
+}
+.country__border-title.dark {
+  color: black;
+  
+}
