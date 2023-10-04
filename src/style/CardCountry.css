@@ -3,8 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  
+    
   font-family: 'Nunito Sans', sans-serif;
+  
 }
 
 .card-country__button-container, .card-country__button-container.dark {
@@ -36,20 +38,25 @@
 }
 .card-country__button.dark:hover{
    opacity: 50%;
+   
 }
 
 .country, .country.dark {
   display: flex;
   width: 100%;
   max-width: 1440px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   line-height: 2rem;
   margin-top: 5rem;
+  flex-wrap: wrap;
+  
 }
 
 .country__flag, .country__flag.dark {
   transition: .3s;
+  margin-bottom: 1rem;
+  margin: 10px;
 }
 .country__flag:hover, .country__flag.dark:hover {
   transform: scale(1.1);
@@ -63,6 +70,9 @@
 
 .country__info, .country__info.dark {
   color: white;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
 }
 .country__info.dark {
   color: black;
@@ -72,6 +82,7 @@
   margin-bottom: 2rem;
   font-size: 2rem;
   color: white;
+  padding: 10px;
 }
 .country__title.dark {
   color: black;
@@ -80,14 +91,18 @@
 .country__details, .country__details.dark {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
   width: 100%;
   max-width: 1440px;
   gap: 4rem;
   justify-content: flex-start;
+  padding: 10px;
 }
 
 .country__list, .country__list.dark {
   list-style: none;
+  
 }
 
 .country__list span, .country__list.dark span {
@@ -101,10 +116,12 @@
 
 .country__border-list, .country__border-list.dark {
   display: flex;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin-top: 2rem;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 10px;
 }
 
 .country__border-button, .country__border-button.dark {
@@ -133,8 +150,21 @@
 .country__border-title, .country__border-title.dark {
   margin-top: 2rem;
   color: white;
+  padding: 10px;
 }
 .country__border-title.dark {
   color: black;
   
+}
+/* Responsive */
+@media only screen and (min-width: 1440px) {
+  .card-country{
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-country{
+    height: 100vh;
+  }
 }
