@@ -12,10 +12,10 @@ const isDarkMode = useSelector((reducers) => reducers.darkMode);
 
 
   return (
-    <div onClick={() => dispatch(toggleDarkMode())} className={isDarkMode? "container__darkmodeDark ":"container__darkmode"}>
+    <div  className={isDarkMode? "container__darkmodeDark ":"container__darkmode"}>
       <header className={isDarkMode ?"headerDark":"headerr"}>
         <h1>Where in the Word?</h1>
-        <p>
+        <p onClick={() => dispatch(toggleDarkMode())}>
           <i className={isDarkMode ? "bx bx-sm bx-sun":"bx bx-sm bx-moon"}></i>Dark Mode
         </p>
       </header>
